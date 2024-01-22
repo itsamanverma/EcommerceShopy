@@ -1,5 +1,5 @@
 "use client";
-import { adminNavOptions, navOptions, styles } from "@/utils";
+import { adminNavOptions, navOptions } from "@/utils";
 import { Fragment, useContext } from "react";
 import CommonModel from "../CommonModel";
 import { GlobalContext } from "@/context";
@@ -26,7 +26,7 @@ function NavItems({ isModalView = false }) {
         {isAdminView
           ? adminNavOptions.map((item) => (
               <li
-                className="cursor-pointer block py-2 pl-3 pr-4 text-orange-400 rounded md:p-0"
+                className="cursor-pointer block py-2 pl-3 pr-4 text-amber-300 rounded md:p-0"
                 key={item.id}
               >
                 {item.label}
@@ -34,7 +34,7 @@ function NavItems({ isModalView = false }) {
             ))
           : navOptions.map((item) => (
               <li
-                className="cursor-pointer block py-2 pl-3 pr-4 text-orange-400 rounded md:p-0"
+                className="cursor-pointer block py-2 pl-3 pr-4 text-amber-300 rounded md:p-0"
                 key={item.id}
               >
                 {item.label}
@@ -52,7 +52,7 @@ export default function Navbar() {
       <nav className="bg-white fixed w-full z-20 top-0 left-0 border-b border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center cursor-pointer">
-            <span className="self-center text-orange-400 text-2xl font-semibold whitespace-nowrap">
+            <span className="self-center text-amber-300 text-2xl font-semibold whitespace-nowrap">
               EcommerceShopy
             </span>
           </div>
@@ -61,14 +61,14 @@ export default function Navbar() {
               <Fragment>
                 <button
                   className={
-                    "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                    "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                   }
                 >
                   Account
                 </button>
                 <button
                   className={
-                    "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                    "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                   }
                 >
                   Cart
@@ -79,7 +79,7 @@ export default function Navbar() {
               isAdminView ? (
                 <button
                   className={
-                    "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                    "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                   }
                 >
                   Client View
@@ -87,7 +87,7 @@ export default function Navbar() {
               ) : (
                 <button
                   className={
-                    "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                    "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                   }
                 >
                   Admin View
@@ -97,7 +97,7 @@ export default function Navbar() {
             {isAuthUser ? (
               <button
                 className={
-                  "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                  "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                 }
               >
                 Logout
@@ -105,7 +105,7 @@ export default function Navbar() {
             ) : (
               <button
                 className={
-                  "mt-1.5 inline-block bg-orange-400 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
+                  "mt-1.5 inline-block bg-amber-300 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
                 }
               >
                 Login
